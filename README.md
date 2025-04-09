@@ -1,4 +1,4 @@
-![Feedback Modal Component](./design/desktop-cover.png)
+
 
 **Challenge Title**
 Feedback Modal Component

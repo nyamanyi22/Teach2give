@@ -1,0 +1,162 @@
+/* General styling for body */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.feed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  flex-direction: column;
+  gap: 20px;
+}
+#openModalBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #12b114;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#openModalBtn:hover {
+  background-color: #397547;
+}
+/* Modal content styling */
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+.hidden {
+  display: none;
+}
+
+
+.modal-content {
+  background: #f0eaea;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #e53935;
+}
+.close:hover {
+  color: red;
+}
+.ratings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ratings button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.ratings button.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Text below the 1 and 10 buttons */
+.comments {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.comments p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+/* Submit and Cancel button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#submitBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#cancelBtn {
+  background-color: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+#submitBtn:hover {
+  background-color: #45a049;
+}
+#cancelBtn:hover {
+  background-color: #e53935;
+}
+/* Styling for the rating text */
+.rating-text {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #41ce59;
+}
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .ratings {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comments {
+    flex-direction: column;
+    align-items: center;
+    color: b;
+    font-weight: bold;
+  }
+}

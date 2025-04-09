@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Feedback Modal Component - FrontendPro Challenge</title>
+  </head>
+  <body>
+    <div class="feed">
+    <h2> How likely are you to recommmend frontend </h2>
+    <button id="openModalBtn">Give Feedback</button>
+  </div>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="closeBtn" class="close">&times;</span>
+        <h2>How was likely are you to recommend frontend pro to someone you know?!</h2>
+        
+        <div class="ratings">
+          <!-- Rating buttons -->
+          <button class="rate" data-rating="1">1</button>
+          <button class="rate" data-rating="2">2</button>
+          <button class="rate" data-rating="3">3</button>
+          <button class="rate" data-rating="4">4</button>
+          <button class="rate" data-rating="5">5</button>
+          <button class="rate" data-rating="6">6</button>
+          <button class="rate" data-rating="7">7</button>
+          <button class="rate" data-rating="8">8</button>
+          <button class="rate" data-rating="9">9</button>
+          <button class="rate" data-rating="10">10</button>
+        </div>
+        
+        <div class="comments">
+          <p class="com1">Not likely at all!</p>
+          <p class="com2">Very likely!</p>
+        </div>
+
+        <!-- Submit and Cancel buttons -->
+        <button id="submitBtn">Submit</button>
+        <button id="cancelBtn">Cancel</button>
+      </div>
+    </div>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
